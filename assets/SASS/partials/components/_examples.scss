@@ -1,0 +1,31 @@
+.main-head {
+	background: #dae4e8;
+	padding: 2em 0;
+	text-align: center;
+	&__logo {
+		max-width: 100px;
+	}
+}
+
+.select-time {
+	background: #ccd5d9;
+	padding: 1em 0;
+	text-align: center;
+	&__ul {
+		font-size: 0.8em;
+		overflow: hidden;
+	}
+	&__item {
+		display: inline;
+		letter-spacing: 0.15em;
+		text-transform: uppercase;
+		&:not(:first-child) {
+			border-left: 1px solid #677785;
+		    margin: 0 0 0 1.5em;
+		    padding: 0 0 0 1.5em;
+		}
+	}
+	a {
+		color: #677785;
+	}
+}
