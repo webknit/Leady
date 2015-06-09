@@ -18,6 +18,10 @@ body {
 	margin: 0;	
 }
 
+html, body {
+	height: 100%;
+}
+
 .container {
 	margin: 0 auto;
 	width: 96%;
@@ -39,6 +43,7 @@ body {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
 	font-family: $header-font-family;
+	font-weight: $weight-bold;
 	margin:1em 0 0.35em 0;
 }
 

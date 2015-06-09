@@ -29,3 +29,85 @@
 		color: #677785;
 	}
 }
+
+.options {
+	background: #f0f5f7;
+	padding: 2em 0;
+	&__search {
+		background: #fff;
+		border: none;
+		border-radius: 5em;
+		font-weight: $weight-bold;
+		margin-bottom: 5em;
+		padding: 1.4em;
+	}
+	&__item {
+		display: inline;
+		font-size: 0.8em;
+		letter-spacing: 0.15em;
+		margin: 0 1em;
+		text-transform: uppercase;
+	}
+	&__a {
+		color: #6c7173;
+	}
+}
+
+.main-body {
+	margin: 0 auto;
+	max-width: 700px;
+	width: 100%;
+}
+
+.ranking {
+	&__item {
+		border-bottom: 1px solid #e9eff2;
+		display: table;
+		margin: 0 0 1.5em;
+		padding: 3em 0;
+		width: 100%;
+	}
+	div {
+		display: table-cell;
+		vertical-align: middle;
+	}
+	&__num {
+		color: #a4a3a3;
+		font-weight: $weight-bold;
+		width: 35px;
+		@include breakpoint(medium) {
+			font-size: 2.5em;
+			width: 90px;
+		}
+		span {
+			font-size: 0.8em;
+		}
+	}
+	&__avatar {
+		width: 54px;
+		@include breakpoint(medium) {
+			width: 75px;
+		}
+		img {
+			max-width: 45px;
+		}
+	}
+	&__name {
+		h2 {
+			color: #525252;
+			font-size: 1.1em;
+			margin: 0;
+			@include breakpoint(medium) {
+				font-size: 1.75em;
+			}
+		}
+	}
+	&__score {
+		color: #a0a0a0;
+		font-weight: $weight-bold;
+		text-align: right;
+		@include breakpoint(medium) {
+			font-size: 1.5em;
+		}
+	}
+}
