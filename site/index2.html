@@ -24,7 +24,7 @@
 
 </head>
 
-<body ng-app="leadyCtrl">
+<body ng-controller="leadyCtrl">
 
 	<header class="main-head">
 	
@@ -59,9 +59,9 @@
 		
 		<section class="main-body">
 		
-			<ul class="ranking" ng-controller="playersController">
+			<ul class="ranking">
 				
-				<li class="ranking__item" ng-repeat="player in PlayerList">
+				<li class="ranking__item">
 				
 					<div class="ranking__num">
 					
@@ -84,6 +84,62 @@
 					<div class="ranking__score">
 					
 						80
+						
+					</div><!-- .ranking__score -->
+				
+				</li><!-- .ranking__item -->
+				
+				<li class="ranking__item">
+				
+					<div class="ranking__num">
+					
+						2<span>nd</span>
+						
+					</div>
+					
+					<div class="ranking__avatar">
+					
+						<img src="img/avatar.png" />
+					
+					</div><!-- .ranking__avatar -->
+					
+					<div class="ranking__name">
+				
+						<h2>Jordan Lane</h2>
+						
+					</div><!-- .ranking__name -->
+					
+					<div class="ranking__score">
+					
+						79
+						
+					</div><!-- .ranking__score -->
+				
+				</li><!-- .ranking__item -->
+				
+				<li class="ranking__item">
+				
+					<div class="ranking__num">
+					
+						3<span>rd</span>
+						
+					</div>
+					
+					<div class="ranking__avatar">
+					
+						<img src="img/avatar.png" />
+					
+					</div><!-- .ranking__avatar -->
+					
+					<div class="ranking__name">
+				
+						<h2>Lee Torson</h2>
+						
+					</div><!-- .ranking__name -->
+					
+					<div class="ranking__score">
+					
+						78
 						
 					</div><!-- .ranking__score -->
 				
