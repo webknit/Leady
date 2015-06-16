@@ -2,7 +2,12 @@ angular.module('leadyCtrl.controllers', [])
 	
 	.controller('playersController', function($scope, leadyPlayersList) {
 
+		playersList = [];
+
 		$scope.players = leadyPlayersList.get();
-		console.log($scope.players);
+
+		$scope.playersList = $scope.players.listing;
+		
+		console.log($scope.playersList);
 		
 	});

@@ -61,11 +61,11 @@
 		
 			<ul class="ranking" ng-controller="playersController">
 				
-				<li class="ranking__item" ng-repeat="player in PlayerList">
+				<li class="ranking__item" ng-repeat="player in playersList">
 				
 					<div class="ranking__num">
 					
-						1<span>st</span>
+						{{player.position}}<span>st</span>
 						
 					</div>
 					
@@ -77,13 +77,13 @@
 					
 					<div class="ranking__name">
 				
-						<h2>Shane Prendergast</h2>
+						<h2>{{player.name}}</h2>
 						
 					</div><!-- .ranking__name -->
 					
 					<div class="ranking__score">
 					
-						80
+						{{player.points}}
 						
 					</div><!-- .ranking__score -->
 				
