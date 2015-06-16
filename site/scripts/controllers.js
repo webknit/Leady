@@ -7,7 +7,9 @@ angular.module('leadyCtrl.controllers', [])
 		$scope.players = leadyPlayersList.get();
 
 		$scope.playersList = $scope.players.listing;
-		
+
+		$scope.shane = 'true';
+
 		console.log($scope.playersList);
 		
 	});
